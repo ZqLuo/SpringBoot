@@ -12,6 +12,8 @@ public class DemoApplication {
 
 	@RequestMapping("/")
 	String index(){
+
+		System.out.print("123");
 		return "Hello World!";
 	}
 
