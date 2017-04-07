@@ -1,5 +1,8 @@
 package com.example;
 
+import com.example.properties.AuthorSettings;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,11 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class DemoApplication {
 
+	@Value("${book.author}")
+	private String bookAuthoer;
+	@Value("${book.name}")
+	private String bookName;
+	@Autowired
+	private AuthorSettings authorSettings;
+
 	@RequestMapping("/")
 	String index(){
-
-		System.out.print("123");
-		return "Hello World!";
+		return "book name is:" + bookName + " and book author is " + authorSettings.getName();
 	}
 
 	public static void main(String[] args) {
