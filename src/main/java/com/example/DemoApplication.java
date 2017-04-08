@@ -13,12 +13,12 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplicat
 @ConditionalOnWebApplication
 public class DemoApplication {
 
-	@Value("${book.author}")
-	private String bookAuthoer;
-	@Value("${book.name}")
-	private String bookName;
-	@Autowired
-	private AuthorSettings authorSettings;
+//	@Value("${book.author}")
+//	private String bookAuthoer;
+//	@Value("${book.name}")
+//	private String bookName;
+//	@Autowired
+//	private AuthorSettings authorSettings;
 
 //	@RequestMapping("/")
 //	String index(){

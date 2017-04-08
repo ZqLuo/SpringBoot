@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 /**
  * properties 配置
  */
-@Component
-@ConfigurationProperties(prefix = "author") //配置前缀匹配
-@PropertySource("classpath:config/author.properties") //指定文件路径
+//@Component
+//@ConfigurationProperties(prefix = "author") //配置前缀匹配
+//@PropertySource("classpath:config/author.properties") //指定文件路径
 public class AuthorSettings {
 
     private String name;
