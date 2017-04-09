@@ -16,7 +16,7 @@ public class PersonController {
     @Autowired
     private PersonService personService;
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     public String getPersonList(Model model){
         Person single = new Person("aa",11);
         List<Person> people = personService.getPersonList();
