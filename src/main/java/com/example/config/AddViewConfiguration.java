@@ -12,5 +12,6 @@ public class AddViewConfiguration extends WebMvcConfigurerAdapter{
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/websocket").setViewName("/websocket");
+        registry.addViewController("/angular").setViewName("/angular");
     }
 }
