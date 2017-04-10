@@ -11,7 +11,6 @@ public class DemoApplication {
 	
 	public static void main(String[] args) {
 		//定制Banner,在Resource文件夹下新建banner.txt，http://patorjk.com/software/taag 生成内容
-		//3213123123213
 		SpringApplication app = new SpringApplication(DemoApplication.class);
 		//关闭banner
 		app.setBannerMode(Banner.Mode.OFF);
