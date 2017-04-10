@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplicat
 @SpringBootApplication
 @ConditionalOnWebApplication
 public class DemoApplication {
-
+	//123
 	public static void main(String[] args) {
 		//定制Banner,在Resource文件夹下新建banner.txt，http://patorjk.com/software/taag 生成内容
 
